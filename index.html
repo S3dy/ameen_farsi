@@ -1,8 +1,27 @@
-\<html>
+<html>
 <body>
-<a href="sms:748270?body=نجم3">زين</a><br/>
-<a href="sms:640202?body=نجم3">موبايلي</a><br/>
-<a href="sms:842802?body=نجم3">الاتصالات السعودية</a><br/>
-<a href="sms:300268?body=نجم3">فيرجين</a><br/>
+<div id="ios" style="display:none">
+    ios
+        <a href="sms:748270;body=نجم3">زين</a><br/>
+        <a href="sms:640202;body=نجم3">موبايلي</a><br/>
+        <a href="sms:842802;body=نجم3">الاتصالات السعودية</a><br/>
+        <a href="sms:300268;body=نجم3">فيرجن</a><br/>
+</div>
+
+<div id="android" style="display:none">
+    android
+        <a href="sms:748270?body=نجم3">زين</a><br/>
+        <a href="sms:640202?body=نجم3">موبايلي</a><br/>
+        <a href="sms:842802?body=نجم3">الاتصالات السعودية</a><br/>
+        <a href="sms:300268?body=نجم3">فيرجين</a><br/>
+</div>
+<script>
+        var ua = navigator.userAgent.toLowerCase();
+                
+        if (ua.indexOf("iphone") > -1 || ua.indexOf("ipad") > -1)
+        document.getElementById('ios').style="display:block";
+        else
+        document.getElementById('android').style="display:block";
+        </script>
 </body>
 </html>
